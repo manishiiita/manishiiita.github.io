@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lynaze Consulting Group | SAS Partner </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script> -->
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #8A9A5B;
+  }
+
+  #small-screen{
+    display: none;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+      text-align: center;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+      text-align: center;
+  }  
+  .container-fluid {
+      padding: 60px 50px;
+  }
+
+  .logo-small {
+      color: #8A9A5B;
+      font-size: 50px;
+      
+  }
+  .logo {
+      color: #5c6c30;
+      font-size: 200px;
+      padding-top: 100px;
+  }
+  
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+
+  .navbar {
+      margin-bottom: 0;
+      background-color: #5c6c30;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #8A9A5B !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  
+  .navbar-brand {
+      padding-top:5px;
+  } 
+
+  .navbar-brand small {
+    display:block;
+    font-size:12px;
+  }
+
+  .navbar-collapse{
+    border-top:0px;
+  }
+
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #8A9A5B;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  .team-img{
+    position: relative;
+    width:100%;
+    height: auto;
+    border-radius: 100%;
+    padding: 10%;
+  }
+  .btn{
+    background: #5c6c30;
+    color:white;
+  }
+.circle {
+  /* width: 90px;
+  height: 90px; */
+  border-radius: 3%;
+  /* background-color: #5c6c30; */
+  /* color: #5c6c30; */
+  text-align: center;
+  display: table-cell;
+  overflow: hidden;
+  vertical-align:middle;
+}
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    #big-screen {
+      display: none;
+    }
+
+    #small-screen {
+      display: block;
+    }
+
+    .navbar-brand {
+      font-size: 16px;
+    }
+
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .nav.navbar-nav a {
+      position: relative;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+        padding-top: 0px;
+    }
+    
+  }
+  </style>
+  <script src="jquery.serialize-object.min.js"></script>
+</head>
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="http://lynaze.com"><span id="big-screen">Lynaze Consulting Group</span><span id="small-screen">Lynaze Consulting</span><small>SAS partner</small></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#ourteam">TEAM</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Lynaze</h2><br>
+      <p>Lynaze Consulting Pvt Ltd. is a service company specializing in Analytics, 
+        Business Intelligence and Data Management. We have extensive experience on 
+        SAS Platforms and Suites e.g. SAS Anti Money Laundering (AML), Fraud Management, 
+        FATCA (Foreign Account Tax Compliance Act), CRS (Common Reporting Standard), 
+        Enterprise Case Management (ECM), SAS IFRS9, SAS EGRC (Enterprise Governance,
+         Risk and Compliance) etc. We have business relationship with companies having 
+         world class products and tools. We provide consulting, implementation, upgrades, 
+         support and other specialized services in these domains. </p>
+         <p>We specialize in providing know-how and proven Quantitative frameworks for 
+           analytics delivery. With both on premise and remote engagement models, 
+           we provide expert resources having excellent industry knowledge and domain 
+           expertise in related fields across the globe. Our services for BFSI span 
+           across Customer Intelligence, SAS Suite Implementation etc are very much 
+           promising and useful for our customers.</p>
+      <br><a class="btn btn-default btn-lg" href="#contact">Get in Touch</a>
+    </div>
+    <div class="col-sm-4 text-center">
+      <span class="glyphicon glyphicon-user logo"></span>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" style="background: #8A9A5B; color:white">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+The following values provide the basis for our actions, both in cooperation with clients and internally.
+      <div class="row">
+        <div class="col-sm-4">
+          <h4>Quality</h4>
+          <ul>
+            <li>Meeting the expectations of our stakeholders by delivering high process and result quality.</li>
+            <li>Applying best management practices.</li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+            <h4>Innovation</h4>
+            <ul>
+              <li>Developing optimized structures.</li>
+              <li>Exploring new interdependences systemically.</li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+              <h4>Transparency</h4>
+              <ul>
+                <li>Making comprehensible decisions.</li>
+                <li>Informing stakeholders comprehensively.</li>
+              </ul>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+            <h4>Empowerment</h4>
+            <ul>
+              <li>Increasing the degree of autonomy.</li>
+              <li>Assigning and accepting responsibility.</li>
+            </ul>
+        </div>
+        <div class="col-sm-4">
+            <h4>Sustainable Development</h4>
+            <ul>
+              <li>Considering the principles of sustainable development in cooperations.</li>
+              <li>Developing structures and context-relationships sustainably.</li>
+            </ul>
+        </div>
+      </div>
+      <div class="row">
+        <h4>Our Mission and Vision</h4>
+        <ul>
+            <li>Lynaze is a persistent and growing consulting company, which provides consulting services in India, Middle East and in selected many other countries.</li>
+          <li>We are an international consulting company specialized in process, project, and change management.</li>
+          <li>We develop long-term relationships with our customers and cooperation partners based on professionalism and loyalty.</li>
+          <li>We promote the development of our employees by challenging assignments and a value-based leadership.</li>
+          <li>We consider the principles of sustainable development.</li>
+          <li>Our Customers appreciate our integrated approaches to process -, project- and change management as well as business analysis in our services.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="services" class="container-fluid text-center">
+  <h2>SERVICES</h2>
+  <h4>What we offer</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-piggy-bank logo-small"></span>
+      <h4>Anti Money Laundering Solution(AML)</h4>
+      <p>We are experts in implementing and customizing anti-money 
+        laundering for the financial service providers.
+         We help our customer comply with best of breed tools, 
+         covering all regulatory requirements.</p>
+    </div>
+    <div class="col-sm-4">
+      <span><img style="width: 60px;
+        height: 50px;"src="image/fms.svg"></span>
+      <h4>Fraud Management System (FMS)</h4>
+      <p>We are experts in designing and implementing real-time and
+         batch anti-fraud solutions for the financial service providers. 
+         We help our customer comply with best of breed tools, 
+         covering all regulatory requirements.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-list-alt logo-small"></span>
+      <h4>FATCA and CRS</h4>
+      <p>We have proven experience in designing and implementing 
+        FATCA case management system and automatic XML report 
+        generation and submission to IRS.</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo-small"></span>
+      <h4>Data Analytics</h4>
+      <p>We analyze massive amounts of data quickly to get answers 
+        that increase agility – an organization's ability to sense 
+        change and respond and drive time-sensitive business decisions 
+        is a competitive differentiator in today's market.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-hdd logo-small"></span>
+      <h4>Data Warehousing</h4>
+      <p>We can help structuring and storing your data coming 
+        from different systems that will make data analysis 
+        and visualization simpler.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4 style="color:#303030;">SAS Administration</h4>
+      <p>We take care of SAS platform starting from hardware sizing
+         to installation, configuration and support of SAS software.</p>
+    </div>
+  </div>
+</div>
+
+<div id="ourteam" class="container-fluid" style="background: #8A9A5B; color:white">
+  <div class="text-center">
+    <h2>OUR TEAM</h2>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12" style="padding: 5%">
+        <h3 class="text-center">Manish Kumar</h3>
+    <div class="row">
+        <p>Manish has extensive experience in end to end implementation and 
+          customization of SAS Anti Money Laundering(4.2, 5.1, 6.x &7.1), 
+          SAS Fraud Management System, SAS Enterprise Case Management (6.x) 
+          at multiple multinational banks.<p>
+          <p>He has previously worked with 
+          banking giants in Bahrain, India, UAE, etc along with many regional 
+          banks to deliver SAS Anti-Money laundering, FMS and other Financial 
+          Crime solutions.</p>
+    </div>
+  </div>      
+    <div class="col-sm-4 col-xs-12" style="padding: 5%">
+      <h3 class="text-center">Amit Sharma</h3>
+      <div class="row" style="font-size: 13px">
+          <p>
+            Amit has 11+ years of experience in Data consulting, ETL design 
+            and development. He has hands on experience and exposure to several 
+            successful end to end implementation of Business Intelligence and 
+            Data warehouse projects using SAS tools. </p>
+            <p>
+            The clients include reputed government institutions and banks in 
+            Middle east, India and South East Asia. He is well versed with tools 
+            like SAS  Visual Analytics, SAS Data Integration Studio, SAS Enterprise 
+            Guide and SAS Base tools.
+        </p>
+      </div>
+    </div>      
+    <div class="col-sm-4 col-xs-12" style="padding: 5%">   
+        <h3 class="text-center">Rahul Shah</h3>
+        <div class="row" style="font-size: 13px">
+          <p>Rahul Shah has successfully executed EGRC/Model Risk Management 
+            projects for global banks to ensure regulatory compliances like IFRS9, 
+            established and managed Risk and Compliance Practice at SAS. 
+            He is also a Lead Trainer for SAS Solutions.</p>
+
+          <p>He has worked on various risk solutions & tools e.g. 
+            SAS Fraud Management System, SAS Anti Money Laundering, 
+            SAS Enterprise Case Management (6.x) with banking giants 
+            like Blue Cross Blue Shield, National Bank of Oman, Ally Bank, 
+            Bank of East Asia, Hongkong, Bank of Bangkok etc.</p>
+        </div>
+
+    </div>    
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Thane, Maharashtra, India</p>
+      <p><span class="glyphicon glyphicon-phone"></span>+91-9599319304</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> contact@lynaze.com</p>
+    </div>
+    <div class="col-sm-7">
+      <form id="gform">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <input class="form-control" id="name" name="subject" placeholder="Subject" type="text" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" id="submit-form" type="submit">Send</button>
+        </div>
+      </div>
+    </form>
+    <div style="display: none" id="thankyou_message">
+      <h2><em>Thanks</em> for contacting us !
+      will get back to you soon!</h2>
+    </div>
+    <div style="display: none" id="error_message">
+        <h2>Unable to email right now !
+        Please Try Later!</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center" style="background: #5c6c30; color:white">
+  <a href="#home" title="To Top"> 
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>&copy; <a href="http://lynaze.com" style="color:white">lynaze.com</a> | 2022 | Privacy Policy | Terms & Conditions | Managed By <a href ="https://sarvoftware.com/" style="color:white" >SARVOFTWARE.COM </a> </p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#home']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+
+var $form = $('form#gform');
+var url = 'https://script.google.com/macros/s/AKfycbwIfkg_Z4K19GabHHdDmHF0EiGBpNiyNYZzF3w21Zwdw6fTxLU/exec';
+
+$('#submit-form').on('click', function(e) {
+  e.preventDefault();
+  var jqxhr = $.ajax({
+    url: url,
+    method: "POST",
+    dataType: "json",
+    data: $form.serializeObject(),
+    success: function(resultData){
+      document.getElementById("gform").style.display = "none";
+      document.getElementById("thankyou_message").style.display = "block";
+    },
+    error: function(errorData) {
+      document.getElementById("error_message").style.display = "block";
+    }
+  })
+})
+
+
+
+// function sendEmail(){
+//   var formData = document.getElementById("gform");
+//   var fd = new FormData(formData);    
+//   var saveData = $.ajax({
+//       type: 'POST',
+//       url: "https://script.google.com/a/lynaze.com/macros/s/AKfycbwu3-4mcCWPy5_yEoifTJ3H7GWZF78ijdtExIMZ/exec",
+//       data: fd,
+//       processData: false,
+//       contentType: false,
+//       success: function(resultData) { 
+//         document.getElementById("thankyou_message").style.display = "block";
+//        },
+//       error: function(errorData) {
+//         console.log(errorData);
+//         alert(errorData);
+//         document.getElementById("error_message").style.display = "block";
+//       }
+//   });
+// }
+
+</script>
+
+</body>
+</html>

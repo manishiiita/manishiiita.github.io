@@ -1,0 +1,12 @@
+/* CSS Document */
+
+body { background:#9cf url(../images/repeat.jpg) repeat-x; color: #333; font: 13px "Lucida Sans Unicode","Lucida Grande", Helvetica, Arial, sans-serif;  }
+
+#container { width:960px; margin: 0 auto; }
+#logo { background:url(../images/logo.png) no-repeat; width: 410px; height: 109px;  }
+#inner_container { margin-top: 30px; background-color: #fff; min-height: 300px; }
+#inner_container .content{ padding-top: 10px; padding-left: 30px; background-color: #fff; min-height: 300px; }
+#inner_container .content h1{ font-size: 25px; color:#39C; font-family: Verdana, Geneva, sans-serif; font-weight: normal; }
+#inner_container .content p{ 0 0 20px;}
+#inner_container .content span{ color:#39C; }
+
